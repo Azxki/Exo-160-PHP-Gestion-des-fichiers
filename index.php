@@ -7,6 +7,14 @@
  */
 // TODO Votre code ici.
 
+//
+//$texte = "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem";
+//file_put_contents('texte.txt', $texte);
+//
+//if (file_exists('texte.txt')) {
+ //   $fichier = file('texte.txt');
+ //   print_r($fichier);
+//}
 
 /**
  * 3. Créez un tableau contenant au moins 10 chaînes de caractère au choix.
@@ -16,6 +24,13 @@
  */
 // TODO Votre code ici
 
+$myArray = ['lorem', 'lorem', 'lorem', 'lorem', 'lorem', 'lorem', 'lorem', 'lorem', 'lorem', 'lorem'];
+file_put_contents('texte.txt', $myArray, FILE_APPEND);
+
+if (file_exists('texte.txt')) {
+    $fichier = file('texte.txt');
+    print_r($fichier);
+}
 
 /**
  * 5. Trouvez une solution pour afficher à l'aide d'un simple echo l'extension du fichier index.php
@@ -23,12 +38,14 @@
 // TODO Votre code ici
 
 
-
 /**
  * 6. Testez si le fichier 'toto' existe, sil n'existe pas, afficher un texte distant que ce fichier n'existe pas !
  */
 // TODO Votre code ici.
 
+if (file_exists('toto.txt') === false) {
+    echo "ce fichier n'existe pas";
+}
 
 /**
  * Super bonus.
